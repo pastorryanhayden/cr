@@ -2,6 +2,18 @@
 layout: default
 body_class: home
 header_image: /uploads/homeback.jpg
+extra_script_tags:
+extra_scripts: |
+    $(document).foundation();
+    $('#exampleModal1').foundation('open');
+    var slideout = new Slideout({
+        'panel': document.getElementById('panel'),
+        'menu': document.getElementById('menu'),
+        'side': 'right'
+    });
+    $('.toggle-button').addEventListener('click', function() {
+    slideout.toggle();
+    });
 ---
 <div class="reveal" id="exampleModal1" data-reveal>
   <h1>We are still setting up camp.</h1>
