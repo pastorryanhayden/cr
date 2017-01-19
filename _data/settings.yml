@@ -1,0 +1,21 @@
+church_name: New Hebron Baptist Church
+logo_image_path: /uploads/logo.png 
+logo2_image_path: /uploads/logo2.png
+main_image: /uploads/header-image.jpg
+phone: (618) 544-7131
+church_email: lgurley87@gmail.com
+facebook: 'https://www.facebook.com/New-Hebron-Baptist-Church-120393777976571/'
+twitter:
+youtube:
+address: 6732 N. 1075th St.
+address2:
+City: Robinson
+State: IL
+Zip: '62454'
+lattitude: '38.949608'
+longitude: '-87.744489'
+map_zoom_level: 14
+main_blog_image: /uploads/1.jpg
+main_sermon_image: /uploads/2.jpg
+default_calendar_image: /uploads/hartwell.jpg
+Google_calendar_id: leonhart4@gmail.com

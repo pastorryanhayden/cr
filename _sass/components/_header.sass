@@ -1,0 +1,55 @@
+.header 
+    min-height: 642px
+    height: 60vh
+    background-color: $main_light_color
+    background-size: cover 
+    position: relative
+    top: 0
+    left: 0 
+    .socialbar
+        position: absolute 
+        top: 35px
+        right: 35px
+        display: flex 
+        width: 112px
+        justify-content: space-between
+        list-style-type: none 
+        li 
+            padding-left: none
+            a 
+                span 
+                    i:first-child
+                        color: $main_dark_color 
+
+
+    .menu
+        position: absolute
+        top: 0
+        display: flex 
+        justify-content: space-between
+        width: 100%
+        background: url('http://sitesforchurch.s3.amazonaws.com/menu.png') no-repeat top left
+        a.logo 
+            margin-left: 73px
+            margin-top: 10px
+        div.right
+            margin-right: 73px
+            margin-top: 113px
+            width: 290px
+            height: 47px
+            display: flex 
+            justify-content: space-between
+            font-size: 20px 
+            align-items: center 
+            text-transform: uppercase
+            a.button 
+                font-size: 20px 
+                font-weight: bold 
+                border-radius: 20px
+                width: 162px
+                height: 47px
+                color: $main_dark_color 
+            a.toggle-button
+                color: $main_light_color
+
+    

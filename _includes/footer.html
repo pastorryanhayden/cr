@@ -1,0 +1,30 @@
+{% assign settings = site.data.settings %}
+<div class="contact">
+  <h2 id="contact">Contact Us</h2>
+  <p>{{settings.church_name}}<br>
+  {{settings.address}}<br>
+  {{settings.City}}, {{settings.State}} {{settings.Zip}} 
+  </p>
+  <p>{{settings.phone}} <br>
+    {{settings.church_email}} 
+  </p>
+ 
+</div><!--/contact-->
+<script src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="//cdn.rawgit.com/noelboss/featherlight/1.5.0/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/0.1.12/slideout.min.js"></script>
+    {{page.extra_scripts | raw }}
+    <script>
+      $(document).ready(function(){
+        var slideout = new Slideout({
+    'panel': document.getElementById('panel'),
+    'menu': document.getElementById('menu'),
+    'side': 'right',
+    'padding': 334
+  });
+  document.querySelector('.toggle-button').addEventListener('click', function() {
+  slideout.toggle();
+});
+        });
+    </script>
