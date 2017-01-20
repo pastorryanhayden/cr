@@ -9,5 +9,6 @@ require 'active_support/all'
 @records = @table.records(:sort => ["date_added", :desc], :limit => 50)
 
 File.open("_data/photos.json", "w") do |f|
-    f.write(@records.to_json)
-end 
+    data = @records.map { |record| record.attributes }
+    f.write(data.to_json)
+end
