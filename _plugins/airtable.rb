@@ -12,3 +12,4 @@ File.open("_data/photos.json", "w") do |f|
     data = @records.map { |record| record.attributes }
     f.write(data.to_json)
 end
+

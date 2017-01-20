@@ -6,14 +6,6 @@ extra_script_tags:
 extra_scripts: |
     $(document).foundation();
     $('#exampleModal1').foundation('open');
-    var slideout = new Slideout({
-        'panel': document.getElementById('panel'),
-        'menu': document.getElementById('menu'),
-        'side': 'right'
-    });
-    $('.toggle-button').addEventListener('click', function() {
-    slideout.toggle();
-    });
 ---
 
   {% include homeModal.html %}
@@ -33,7 +25,7 @@ extra_scripts: |
   <div class="main-cta">
   <a href="#"><img src="http://sitesforchurch.s3.amazonaws.com/cometocamp.png" alt="Come To Camp" /></a>
   <a href="#"><img src="http://sitesforchurch.s3.amazonaws.com/becomeavolunteer.png" alt="Become A Volunteer" /></a>
-  <a href="#"><img src="http://sitesforchurch.s3.amazonaws.com/donatetothecamp.png" alt="Donate to The Camp" /></a>
+  <a href="donate.html"><img src="http://sitesforchurch.s3.amazonaws.com/donatetothecamp.png" alt="Donate to The Camp" /></a>
 </div><!--/main-cta-->
   <div class="editable">
   <h2>A week of camp can change your life.</h2>
@@ -47,16 +39,6 @@ extra_scripts: |
   </div><!--/cta-buttons-->
 
 </div><!--/main-text-->
-<div class="newsletter editable">
-  <h2>Stay Tuned</h2>
-  <p>Sign up for our newsletter to get the latest news and updates.</p>
-  <div class="input-group">
-  <span class="input-group-label"> <i class="fa fa-envelope"></i> </span>
-  <input class="input-group-field" type="email" placeholder="Enter email address" />
-  <div class="input-group-button">
-    <input type="submit" class="button" value="Subscribe" />
-  </div><!--/input group button-->
-</div><!--/input group-->
-
-</div><!--/newsletter-->
+{% include photos.html %}
+{% include newsletter.html %}
 </div><!--/page-content-->
