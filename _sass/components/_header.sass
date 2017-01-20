@@ -29,11 +29,13 @@
         justify-content: space-between
         width: 100%
         background: url('http://sitesforchurch.s3.amazonaws.com/menu.png') repeat-x top left 
-        a.logo 
-            margin-left: 73px
+        a.logo
+            +breakpoint(medium)
+                margin-left: 73px
             margin-top: 10px
         div.right
-            margin-right: 73px
+            +breakpoint(medium)
+                margin-right: 73px
             margin-top: 113px
             height: 47px
             display: flex 
